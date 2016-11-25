@@ -4,8 +4,7 @@ var fs = require("fs");
 var UPDATE = 1;
 var PORT = 8266;  //Set whatever port you want to listen on
 
-
-console.log("Starting Nodejs ESP8266 OTA Update Server");
+console.log("Starting Nodejs ESP8266 OTA Update Server.");
 console.log("Listening on 0.0.0.0:" +PORT.toString());
 var server = http.createServer(function(request, response){
 
