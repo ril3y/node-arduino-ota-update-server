@@ -2,7 +2,10 @@ var http = require('http');
 var fs = require("fs");
 
 var UPDATE = 1;
+var PORT = 8266;
 
+console.log("Starting Nodejs ESP8266 OTA Update Server");
+console.log("Listening on 0.0.0.0:" +PORT.toString());
 var server = http.createServer(function(request, response){
 
     if(request.url === "/update_light/update.bin"){
@@ -45,6 +48,6 @@ var server = http.createServer(function(request, response){
     }
    
 });
-server.listen(8266);
+server.listen(PORT);
 
 
